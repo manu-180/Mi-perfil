@@ -27,10 +27,10 @@ def header(detail=True, animated=False) -> rx.Component:
                     "@ManuNv",
                 ),
             rx.hstack(
-                link_icon("","/imagen_icon/linkedin-in.svg","linkedin"),
-                link_icon("","/imagen_icon/instagram.svg","instagram"),
-                link_icon("", "/imagen_icon/envelope-regular.svg","gmail"),
-                link_icon("","/imagen_icon/twitter.svg","twitter"))),
+                link_icon(LINKEDIN_URL,"/imagen_icon/linkedin-in.svg","linkedin"),
+                link_icon(IG_URL,"/imagen_icon/instagram.svg","instagram"),
+                link_icon("https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRdqSjkhHNlRzLqlTGwVTwRNHwTfQwXCWghLDmhCxqJcBQGLCJLxFfCqwWNbzRgrmVsZsz", "/imagen_icon/envelope-regular.svg","gmail"),
+                link_icon("https://twitter.com/Inicio/","/imagen_icon/twitter.svg","twitter"))),
             color= TextColor.BODY.value,
             spacing="3",
             style=TITLE_STYLE
