@@ -1,11 +1,11 @@
 import reflex as rx 
-from perfil.components.link_button.link_icon import link_icon
-from perfil.components.info_text import info_text
-from perfil.styles.colors import TextColor, Color
-from perfil.styles.styles import TITLE_STYLE, Size
-from perfil.styles.fuentes import Font
-from perfil.constants.constants import *
-import perfil.styles.styles as styles
+from index.components.link_button.link_icon import link_icon
+from index.components.info_text import info_text
+from index.styles.colors import TextColor, Color
+from index.styles.styles import TITLE_STYLE, Size
+from index.styles.fuentes import Font
+from index.constants.constants import *
+import index.styles.styles as styles
 
 
 

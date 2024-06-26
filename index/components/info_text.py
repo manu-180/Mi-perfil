@@ -1,6 +1,6 @@
 import reflex as rx 
-from perfil.styles.colors import Color
-from perfil.styles.styles import Size, FontWeight
+from index.styles.colors import Color
+from index.styles.styles import Size, FontWeight
 
 def info_text(title:str, body:str) -> rx.Component:
     return rx.box(

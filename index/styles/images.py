@@ -1,6 +1,5 @@
 import reflex as rx
-from perfil.styles.styles import Size, BASE_STYLE
-
+from index.styles.styles import Size, BASE_STYLE
 
 class Imagen(rx.State):
     valor:int = 0

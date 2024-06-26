@@ -1,8 +1,8 @@
 import reflex as rx
 from enum import Enum
 from .colors import Color, TextColor
-from perfil.styles.fuentes import Font, FontWeight
-import perfil.styles.styles as styles
+from index.styles.fuentes import Font, FontWeight
+import index.styles.styles as styles
 
 MAX_WIDTH= "560px"
 APARECE = "animate__animated animate__fadeInUp"
@@ -37,19 +37,21 @@ BASE_STYLE = {
         "font_weight": FontWeight.MEDIUM.value
     },
     rx.button: {
-        "width": "100%",
-        "height": "100%",
-        "padding": Size.SMALL.value,
-        "border_radius": Size.DEFAULT.value,
-        "color": TextColor.HEADER.value,
-        "background_color": Color.CONTENT.value,
-        "white_space": "normal",
-        "text_align": "start",
-        "--cursor-button": "pointer",
-        "_hover": {
-            "background_color": Color.SECONDARY.value
-        }
-    },
+    "width": "100%",
+    "height": "100%",
+    "padding": Size.SMALL.value,
+    "border_radius": Size.DEFAULT.value,
+    "color": TextColor.HEADER.value,
+    "background_color": Color.CONTENT.value,
+    "white_space": "normal",
+    "text_align": "start",
+    "--cursor-button": "pointer",
+    "_hover": {
+        "background_color": Color.SECONDARY.value,
+        "transition": "background-color 1s ease"
+    }
+}
+,
     rx.link: {
         "color": TextColor.BODY.value,
         "text_decoration": "none",

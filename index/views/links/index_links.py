@@ -1,8 +1,8 @@
 import reflex as rx 
-from perfil.components.link_button.link_button import link_button
-from perfil.constants.constants import *
-from perfil.views.routers import Route
-from perfil.styles.styles import APARECE
+from index.components.link_button.link_button import link_button
+from index.constants.constants import *
+from index.views.routers import Route
+from index.styles.styles import APARECE
 
 
 def index_links() -> rx.Component:

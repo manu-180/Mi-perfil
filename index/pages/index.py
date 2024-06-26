@@ -1,14 +1,14 @@
 import reflex as rx 
-from perfil.components.navbar import navbar
-from perfil.views.header.header import header
-from perfil.views.links.index_links import index_links
-from perfil.components.footer import footer
-from perfil.styles.styles import Size, BASE_STYLE, MAX_WIDTH, STELESHEWTS
-from perfil.components.title import title
-from perfil.views.util import *
-from perfil.components.float_button import float_button 
-from perfil.constants.constants import MERCADO_PAGO
-from perfil.styles.styles import REBOTAR, APARECE
+from index.components.navbar import navbar
+from index.views.header.header import header
+from index.views.links.index_links import index_links
+from index.components.footer import footer
+from index.styles.styles import Size, BASE_STYLE, MAX_WIDTH, STELESHEWTS
+from index.components.title import title
+from index.views.util import *
+from index.components.float_button import float_button 
+from index.constants.constants import MERCADO_PAGO
+from index.styles.styles import REBOTAR, APARECE
  
 @rx.page(
     title=title_page,

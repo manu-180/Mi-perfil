@@ -1,6 +1,6 @@
 import reflex as rx
-from perfil.styles.styles import Size,TITLE_STYLE 
-from perfil.styles.styles import Size, MAX_WIDTH, APARECE
+from index.styles.styles import Size,TITLE_STYLE 
+from index.styles.styles import Size, MAX_WIDTH, APARECE
 
 def title(text:str) -> rx.Component:
     return rx.flex(

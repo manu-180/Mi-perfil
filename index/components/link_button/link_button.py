@@ -1,8 +1,8 @@
 import reflex as rx 
-from perfil.styles.styles import BOTTON_TITLE_STYLE, BOTTON_BODY_STYLE
-from perfil.styles.colors import Color
-from perfil.styles.styles import Size, MAX_WIDTH, APARECE
-import perfil.styles.styles as styles
+from index.styles.styles import BOTTON_TITLE_STYLE, BOTTON_BODY_STYLE
+from index.styles.colors import Color
+from index.styles.styles import Size, MAX_WIDTH, APARECE
+import index.styles.styles as styles
 
 def link_button(title: str, body: str, url: str, image:str, is_external=True, animated=False) -> rx.Component:
     return rx.link(

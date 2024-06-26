@@ -1,6 +1,6 @@
 import reflex as rx
-from perfil.styles.styles import BOTTON_TITLE_STYLE, BOTTON_BODY_STYLE
-from perfil.styles.styles import Size, Color
+from index.styles.styles import BOTTON_TITLE_STYLE, BOTTON_BODY_STYLE
+from index.styles.styles import Size, Color
 
 
 
@@ -27,10 +27,11 @@ def box(title, body, image)-> rx.Component:
                 "width":"100%", 
                 "color" : "white",
                 "border_radius":Size.DEFAULT.value,
-                "opacity": "0.6",
+                "opacity": "0.5",
                 "white_space": "normal",
                 "_hover": {
                 "background_color": Color.CONTENT.value,
-                "opacity":"1"},
-                "transition": "background-color 0.3s ease"}
+                "opacity": "1",
+                "transition": "opacity 0.6s ease"},
+                "transition": "background-color 1s ease"}
         )

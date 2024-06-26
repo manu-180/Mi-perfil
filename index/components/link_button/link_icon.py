@@ -1,5 +1,5 @@
 import reflex as rx
-from perfil.styles.styles import Size
+from index.styles.styles import Size
 
 def link_icon(url:str, image:str, alt:str) -> rx.Component:
     return rx.link(

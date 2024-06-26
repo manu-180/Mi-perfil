@@ -1,9 +1,9 @@
 import reflex as rx 
-from perfil.components.link_button.link_button import link_button
-from perfil.constants.constants import *
-from perfil.views.routers import Route
-from perfil.components.box import box
-from perfil.styles.styles import APARECE
+from index.components.link_button.link_button import link_button
+from index.constants.constants import *
+from index.views.routers import Route
+from index.components.box import box
+from index.styles.styles import APARECE
 
 def courses_links() -> rx.Component:
     return rx.box(

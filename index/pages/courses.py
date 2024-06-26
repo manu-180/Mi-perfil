@@ -1,14 +1,14 @@
 import reflex as rx 
-from perfil.components.navbar import navbar
-from perfil.views.header.header import header
-from perfil.views.links.courses_links import courses_links
-from perfil.components.footer import footer
-from perfil.styles.styles import Size, BASE_STYLE, MAX_WIDTH, STELESHEWTS
-from perfil.components.title import title
-from perfil.views.util import *
-from perfil.views.routers import Route
-from perfil.components.float_button import float_button 
-from perfil.constants.constants import MERCADO_PAGO
+from index.components.navbar import navbar
+from index.views.header.header import header
+from index.views.links.courses_links import courses_links
+from index.components.footer import footer
+from index.styles.styles import Size, BASE_STYLE, MAX_WIDTH, STELESHEWTS
+from index.components.title import title
+from index.views.util import *
+from index.views.routers import Route
+from index.components.float_button import float_button 
+from index.constants.constants import MERCADO_PAGO
  
 @rx.page(
     route=Route.Courses.value,

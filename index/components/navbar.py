@@ -1,8 +1,8 @@
 import reflex as rx
-from perfil.styles.styles import Size, NAVBAR_STYLE
-from perfil.styles.colors import Color, TextColor
-from perfil.views.routers import Route
-from perfil.styles.fuentes import Font
+from index.styles.styles import Size, NAVBAR_STYLE
+from index.styles.colors import Color, TextColor
+from index.views.routers import Route
+from index.styles.fuentes import Font
 
 
 def navbar(text=False) -> rx.Component:

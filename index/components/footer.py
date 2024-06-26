@@ -1,11 +1,10 @@
 import reflex as rx
 import datetime
-from perfil.styles.colors import TextColor
-from perfil.styles.styles import Size, BASE_STYLE
-from perfil.styles.images import Imagen
-from perfil.styles.fuentes import Font
-from perfil.styles.styles import Size, MAX_WIDTH, APARECE
-
+from index.styles.colors import TextColor
+from index.styles.styles import Size, BASE_STYLE
+from index.styles.images import Imagen
+from index.styles.fuentes import Font
+from index.styles.styles import Size, MAX_WIDTH, APARECE
 
 def footer(detail=True) -> rx.Component:
     return rx.center(
@@ -17,8 +16,7 @@ def footer(detail=True) -> rx.Component:
                 margin="0px",
                 size="7",
                    font_family=Font.DEFAULT.value),
-            rx.image(src= Imagen.realogo,
-                    on_click=Imagen.cambiar_imagen(),
+            rx.image(src="/logintaller.jpeg",
                     height="10em",
                     width="10em",
                     alt= "logo",
@@ -34,5 +32,4 @@ def footer(detail=True) -> rx.Component:
         margin_y = "0px",
         padding_y="0px"
     ))
-    
     
