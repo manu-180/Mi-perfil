@@ -1,7 +1,6 @@
 """Lucide Icon component."""
 
 from reflex.components.component import Component
-from reflex.style import Style
 from reflex.utils import console, format
 from reflex.vars import Var
 
@@ -45,23 +44,24 @@ class Icon(LucideIconComponent):
                     feature_name=f"icon {tag}",
                     reason=f"it was renamed upstream. Use {new_tag} instead.",
                     deprecation_version="0.4.6",
-                    removal_version="0.5.0",
+                    removal_version="0.6.0",
                 )
                 return new_tag
             return tag
 
         if children:
-            if len(children) == 1 and type(children[0]) == str:
+            if len(children) == 1 and isinstance(children[0], str):
                 props["tag"] = children[0]
+                children = []
             else:
                 raise AttributeError(
                     f"Passing multiple children to Icon component is not allowed: remove positional arguments {children[1:]} to fix"
                 )
-        if "tag" not in props.keys():
+        if "tag" not in props:
             raise AttributeError("Missing 'tag' keyword-argument for Icon")
 
         if (
-            type(props["tag"]) != str
+            not isinstance(props["tag"], str)
             or map_deprecated_icon_names_05(format.to_snake_case(props["tag"]))
             not in LUCIDE_ICON_LIST
         ):
@@ -72,15 +72,8 @@ class Icon(LucideIconComponent):
 
         props["tag"] = format.to_title_case(format.to_snake_case(props["tag"])) + "Icon"
         props["alias"] = f"Lucide{props['tag']}"
+        props.setdefault("color", f"var(--current-color)")
         return super().create(*children, **props)
-
-    def _apply_theme(self, theme: Component):
-        self.style = Style(
-            {
-                "color": f"var(--current-color)",
-                **self.style,
-            }
-        )
 
 
 RENAMED_ICONS_05 = {
@@ -129,7 +122,7 @@ RENAMED_ICONS_05 = {
     "dot_square": "square_dot",
     "download_cloud": "cloud_download",
     "equal_square": "square_equal",
-    "form_input": "rectangle_elipsis",
+    "form_input": "rectangle_ellipsis",
     "function_square": "square_function",
     "gantt_chart_square": "square_gantt_chart",
     "gauge_circle": "circle_gauge",
@@ -140,7 +133,7 @@ RENAMED_ICONS_05 = {
     "ice_cream_2": "ice_cream_bowl",
     "indent": "indent_increase",
     "kanban_square": "square_kanban",
-    "kanban_square_dashed": "square_kanban_dashed",
+    "kanban_square_dashed": "square_dashed_kanban",
     "laptop_2": "laptop_minimal",
     "library_square": "square_library",
     "loader_2": "loader_circle",

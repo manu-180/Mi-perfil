@@ -28,8 +28,6 @@ def index() -> rx.Component:
             header(),
             title("Contactame en mis redes:"),
             index_links(),
-            title("Contactame en mis redes:"),
-            index_links(),
             width="100%",
             margin_y=Size.BIG.value,
             max_width=MAX_WIDTH)),

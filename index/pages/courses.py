@@ -33,7 +33,7 @@ def courses() -> rx.Component:
             margin_y=Size.BIG.value,
             max_width=MAX_WIDTH)),
         rx.vstack(  
-            footer(detail=False),
+            footer(),
             align="center",
             padding_x=Size.VERY_SMALL.value),
         padding=Size.MEDIUM.value
